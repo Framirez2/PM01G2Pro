@@ -13,11 +13,10 @@
         android:layout_marginTop="28dp"
         android:layout_marginBottom="372dp"
         android:backgroundTint="#FFC107"
-        android:text="División"
+        android:text="Division"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnrestar" />
+        app:layout_constraintStart_toStartOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

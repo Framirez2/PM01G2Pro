@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Configuracion</string>
+    <string name="selArch"> Seleccionar Archivo </string>
+    <string name="selDesc">  Escriba una descripcion</string>
 </resources>

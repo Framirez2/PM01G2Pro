@@ -27,6 +27,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.configuracion.config.API;
 import com.google.android.gms.common.util.IOUtils;
 
 import java.io.ByteArrayOutputStream;
@@ -91,15 +92,15 @@ public class Envio_Archivos extends AppCompatActivity {
 
             @Override
             public void onResponse(String response) {
-                Toast.makeText(MainActivity.this, "sent", Toast.LENGTH_SHORT).show();
-                Toast.makeText(MainActivity.this, response, Toast.LENGTH_SHORT).show();
+                Toast.makeText(Envio_Archivos.this, "sent", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Envio_Archivos.this, response, Toast.LENGTH_SHORT).show();
                 System.out.println(response);
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(MainActivity.this, "Errrorrr", Toast.LENGTH_SHORT).show();
-                Toast.makeText(MainActivity.this, "Error!! " + error.toString(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(Envio_Archivos.this, "Errrorrr", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Envio_Archivos.this, "Error!! " + error.toString(), Toast.LENGTH_SHORT).show();
                 System.out.println(error.toString());
             }
         }){
